@@ -13,10 +13,7 @@ getComputerChoice = () => {
     }
 }
 
-game = () => {
-for (let i = 0; i < 5; i++) {
-const computerSelection = getComputerChoice();
-const playerSelection = prompt('Please select rock, paper or scissor: ');
+
 playRound = (playerSelection, computerSelection) => {
     if (playerSelection === computerSelection) {
         return `Its a draw, ${playerSelection} same as ${computerSelection}`;
@@ -34,6 +31,12 @@ playRound = (playerSelection, computerSelection) => {
         return `You are loose, ${computerSelection} beats ${playerSelection}`;
     }
 }
+
+game = () => {
+for (let i = 0; i < 5; i++) {
+const computerSelection = getComputerChoice();
+const playerSelection = prompt('Please select rock, paper or scissor: ');
+playRound(playerSelection, computerSelection);
 console.log(playRound(playerSelection, computerSelection));
 }
 }
