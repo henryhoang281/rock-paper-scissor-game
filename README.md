@@ -1,4 +1,5 @@
 # rock-paper-scissor-game step by step
+Step 1:
 First.
 We need to make the computer return random values of Rock, Paper, Scissor 
 by using getComputerChoice function. In order to do this, I used Math.random -> return random floating numbers from 0 to 1, not include 1 then times 3 because we have 3 values(rock, paper, scissor), then round it down to integer number using Math.floor -> we have 0, 1, 2. 
@@ -15,3 +16,6 @@ Loop play round into game function so we can play the game 5 times, and scores a
 
 Finally. 
 Use getResult function to check who has more points -> winner.
+
+Step 2:
+Using DOM to add UI to the game
